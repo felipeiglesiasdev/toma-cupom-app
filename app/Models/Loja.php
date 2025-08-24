@@ -1,17 +1,12 @@
 <?php
-
 namespace App\Models;
-
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-
 class Loja extends Model
 {
     use HasFactory;
-
     protected $table = 'lojas';             // NOME DA TABELA NO BD
     protected $primaryKey = 'id_loja';      // CHAVE PRIMÁRIA
-
     protected $fillable = [                 // COLUNAS DA TABELA
         'nome',
         'slug',

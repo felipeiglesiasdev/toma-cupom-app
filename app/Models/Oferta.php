@@ -1,18 +1,13 @@
 <?php
-
 namespace App\Models;
-
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-
 class Oferta extends Model
 {
     use HasFactory;
-
-    protected $table = 'ofertas';
-    protected $primaryKey = 'id_oferta';
-
-    protected $fillable = [
+    protected $table = 'ofertas';               // NOME DA TABELA NO BD
+    protected $primaryKey = 'id_oferta';        // CHAVE PRIMÁRIA
+    protected $fillable = [                     // COLUNAS DA TABELA
         'id_loja',
         'titulo',
         'descricao',
